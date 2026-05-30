@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github by freedom</title>
+    <style>
+        /* 全域樣式設定 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 標題區塊樣式 */
+        header {
+            background-color: #1a202c;
+            color: #ffffff;
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            color: #a0aec0;
+            font-size: 1.1rem;
+        }
+
+        /* 網格版面設定 */
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            flex: 1;
+        }
+
+        /* 卡片樣式設定 */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid #4a5568;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+            border-top-color: #3182ce;
+        }
+
+        .card h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.3rem;
+            color: #2d3748;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 10px;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #4a5568;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+
+        .url-box {
+            background-color: #edf2f7;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #2b6cb0;
+            word-break: break-all;
+            margin-top: auto;
+        }
+
+        .hidden-url {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #e53e3e;
+            font-weight: bold;
+        }
+
+        /* 頁尾樣式 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #718096;
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>github by freedom</h1>
+        <p>遊戲、工具與專案展示合集</p>
+    </header>
+
+    <div class="container">
+        <!-- 專案 1 -->
+        <a href="https://bhes108045freedom.github.io/test/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>🔍 偵探解謎：知識破解</h2>
+            <div class="description">
+                這是一款推理遊戲。玩家將扮演偵探，透過閱讀案件卷宗來評估推理能力並獲取積分。
+            </div>
+            <div class="url-box">主網址: /test/</div>
+        </a>
+
+        <!-- 專案 2 -->
+        <a href="https://bhes108045freedom.github.io/fdg/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>☁️ 大耳狗工具箱 ☁️</h2>
+            <div class="description">
+                一個設計可愛的療癒小空間，內建多種實用工具，包含：番茄鐘、報時功能、碼錶、計數器與世界時鐘。
+            </div>
+            <div class="url-box">主網址: /fdg/</div>
+        </a>
+
+        <!-- 專案 3 -->
+        <a href="https://bhes108045freedom.github.io/school/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>🏫 韶光凝影・碧華淬鍊</h2>
+            <div class="description">
+                新北市立碧華國中的專題網頁。介紹了建校歷史（扎根於三重埔）、藝文搖籃、新校舍蛻變，以及期許學子邁向未來的星辰大海。
+            </div>
+            <div class="url-box">主網址: /school/</div>
+            <div class="hidden-url">📎 內部發現連結: 導向碧華國中官方網站 (www.bhjh.ntpc.edu.tw)</div>
+        </a>
+
+        <!-- 專案 4 -->
+        <a href="https://bhes108045freedom.github.io/-/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>🎮 寶可夢輪播圖鑑</h2>
+            <div class="description">
+                這是一個用來展示寶可夢圖片的輪播相簿系統。
+            </div>
+            <div class="url-box">主網址: /-/</div>
+        </a>
+
+        <!-- 專案 5 -->
+        <a href="https://bhes108045freedom.github.io/gfdiu.gjif/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>(尚未建立內容)</h2>
+            <div class="description">
+                此網頁目前似乎沒有設定標題或放置任何互動元件，為空白狀態。
+            </div>
+            <div class="url-box">主網址: /gfdiu.gjif/</div>
+        </a>
+
+        <!-- 專案 6 -->
+        <a href="https://bhes108045freedom.github.io/sdgs15-v1/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>🌿 森林守護者：SDG 15</h2>
+            <div class="description">
+                結合聯合國永續發展目標 (SDGs) 第15項「保育陸域生態」的點擊遊戲。玩家需要在30秒內點擊荒地種樹，消除火焰與斧頭等威脅，並注意不要驚擾小動物。
+            </div>
+            <div class="url-box">主網址: /sdgs15-v1/</div>
+        </a>
+
+        <!-- 專案 7 -->
+        <a href="https://bhes108045freedom.github.io/kira/" class="card" target="_blank" rel="noopener noreferrer">
+            <h2>🌍 SDGs 環保小冒險</h2>
+            <div class="description">
+                環保主題的鍵盤操控小遊戲。玩家需使用方向鍵 (↑ ↓ ← →) 移動角色，盡可能收集「綠色能源」(+10分)，並避開「垃圾」(-5分)。
+            </div>
+            <div class="url-box">主網址: /kira/</div>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 github by freedom. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
